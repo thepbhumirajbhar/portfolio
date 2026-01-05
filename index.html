@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhumi Rajbhar</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-color: #ffffff;
+            /* Add these lines for font smoothing: */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul{
+      list-style: none;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #222;
+        border-bottom: 2px solid #2563eb;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    /*buttons*/
+    .btn{
+      display: inline-block;
+      border-radius: 4px;
+      font-weight: bold;
+      border: 1px solid transparent ;
+      cursor: pointer;
+      padding: 10px 20px;
+      font-size: 5 rem;
+    }
+    .btn-primary{
+      background-color: #2563eb;
+      color: white;
+    }
+    .btn-primary:hover{
+      background-color: #1d4ed8;
+    }
+    .btn-secondary{
+       background-color: #f3f4f6;
+       color: #333;
+       border: 1px solid #ccc;;
+    }
+
+    .btn-secondary:hover{
+      background-color: #e5e7eb;
+    }
+
+
+    /* navbar*/
+    .navbar{
+      position: fixed;
+      border-bottom: 1px solid #e9ecef;
+      color: slategray;
+      width: 100%;
+      padding: 15px 0;
+      z-index: 50;
+      background-color: #f8f9fa;
+    }
+
+    .navbar-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo{
+      font-size: 1.25rem;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .nav-menu{
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-link{
+      color: #555;
+    }
+
+    .nav-link:hover{
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+
+
+    /*hero section*/
+    #home{
+      text-align: center;
+      padding: 100px 100px;
+      background-color: #fff;
+    }
+
+    .profile-img{
+       width: 180px;
+       height: 180px;
+       border-radius: 50%;
+       border: 1px solid #ddd;
+       object-fit: cover;
+       margin-bottom: 20px;
+       object-position: top;
+    }
+
+    .hero-title{
+      font-size: 2.5rem;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+     .hero-subtitle{
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+
+     /*about*/
+    #about{
+       padding: 60px 0;
+       background-color: #f9f9f9;
+       border-top: 1px solid #eee;
+       border-bottom: 1px solid #eee;
+    }
+
+    .skills-card{
+       background-color: white;
+       padding: 20px;
+       border: 1px solid #ddd;
+    }
+
+    .skills-items{
+      margin-bottom: 10px;
+      padding: 5px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .about-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .about-text p {
+      margin-bottom: 15px;}
+
+
+    /*Contact*/
+    #contact{
+      padding: 60px ;
+      background-color: #fff;
+      border-top: 5px solid #eee ;
+    }
+
+    .contact-box{
+      background-color: #f9f9f9;
+      width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .contact-text{
+      padding: 25px;
+      font-size: 1 rem;
+    }
+
+    .email-btn{
+      display: inline-flex;
+      background-color:#2563eb ;
+      padding: 12px 25px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .email-btn:hover{
+      text-decoration: underline;
+      background-color: #1d4ed8;
+    }
+
+
+    /* footer*/
+    footer{
+      background-color: #333;
+      color:#ccc ;
+      padding:30px 0;
+      text-align: center;
+    }
+
+    .social-links{
+      margin-bottom: 15 px ;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: underline;
+    }
+
+
+
+
+  </style>
+
+
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container navbar-content">
+      <a href="#" class="logo"> Bhumi Rajbhar</a>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <!--hero section-->
+    <section id="home">
+      <div class="container">
+        <img src="profile.jpg" alt="profile picture" class="profile-img">
+        <h1 class="hero-title">Hi! I am Bhumi Rajbhar</h1>
+        <p class="hero-subtitle">3rd Year EEE Student & Aspiring Web Developer</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary"> Hire Me </a>
+          <a href="#about" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+               I am currently studying Electrical and Electronics Engineering (EEE) in my 3rd year. While I study hardware in college, my real passion is software and web development.
+            </p>
+            <p>
+               I taught myself HTML, CSS, and basic JavaScript. I am looking for an internship where I can learn more and contribute to real projects.
+            </p>
+          </div>
+          <div class="skills-card">
+            <h3 class="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;"> My Skills</h3>
+            <div class="skill-item">HTML5</div>
+            <div class="skill-item">CSS3</div>
+            <div class="skill-item">JavaScript (Basic)</div>
+            <div class="skill-item">Responsive Design</div>
+            <div class="skill-item">Java</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--contact section-->
+    <section id="contact">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+
+        <div class="contact-box">
+          <p class="contact-text">
+            I am currently open to internships and junior developer roles. If you have any questions, feel free to drop me an email!
+          </p>
+          <a href="mailto:bhumirajbhar60@gmail.com?subject=Portfolio Inquiry&body=Hi Bhumi, I saw your portfolio and..." class="email-btn">
+            Send Email
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer-->
+     <footer>
+      <div class="container">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/bhumi-rajbhar-292633291/">Linkedin</a>
+        </div>
+        <p>
+          &copy; 2026 Bhumi Rajbhar.
+        </p>
+      </div>
+     </footer>
+
+  
+</body>
+</html>
