@@ -235,9 +235,6 @@
   .mb-7\.5 {
     margin-bottom: calc(var(--spacing) * 7.5);
   }
-  .ml-3 {
-    margin-left: calc(var(--spacing) * 3);
-  }
   .box-border {
     box-sizing: border-box;
   }
@@ -253,26 +250,14 @@
   .inline-flex {
     display: inline-flex;
   }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
-  }
-  .h-32 {
-    height: calc(var(--spacing) * 32);
-  }
-  .h-37\.5 {
-    height: calc(var(--spacing) * 37.5);
-  }
-  .h-40 {
-    height: calc(var(--spacing) * 40);
-  }
-  .h-56 {
-    height: calc(var(--spacing) * 56);
-  }
-  .h-full {
-    height: 100%;
   }
   .w-2 {
     width: calc(var(--spacing) * 2);
@@ -285,9 +270,6 @@
   }
   .w-37\.5 {
     width: calc(var(--spacing) * 37.5);
-  }
-  .w-40 {
-    width: calc(var(--spacing) * 40);
   }
   .w-fit {
     width: fit-content;
@@ -316,12 +298,6 @@
     --tw-scale-y: 130%;
     --tw-scale-z: 130%;
     scale: var(--tw-scale-x) var(--tw-scale-y);
-  }
-  .rotate-90 {
-    rotate: 90deg;
-  }
-  .rotate-270 {
-    rotate: 270deg;
   }
   .cursor-pointer {
     cursor: pointer;
@@ -419,12 +395,6 @@
   .bg-accent {
     background-color: var(--color-accent);
   }
-  .bg-accent\/30 {
-    background-color: color-mix(in srgb, #23aeba 30%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-accent) 30%, transparent);
-    }
-  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -434,74 +404,11 @@
   .bg-size-\[22px_22px\] {
     background-size: 22px 22px;
   }
-  .object-contain {
-    object-fit: contain;
-  }
   .object-cover {
     object-fit: cover;
   }
-  .object-fill {
-    object-fit: fill;
-  }
-  .object-\[9\%_10\%\] {
-    object-position: 9% 10%;
-  }
-  .object-\[15\%\] {
-    object-position: 15%;
-  }
-  .object-\[15\%_50\%\] {
-    object-position: 15% 50%;
-  }
-  .object-\[15\%_\] {
-    object-position: 15% ;
-  }
-  .object-\[15\] {
-    object-position: 15;
-  }
-  .object-\[75\%_50\%\] {
-    object-position: 75% 50%;
-  }
   .object-\[80\%_10\%\] {
     object-position: 80% 10%;
-  }
-  .object-\[83\%_10\%\] {
-    object-position: 83% 10%;
-  }
-  .object-\[85\%_10\%\] {
-    object-position: 85% 10%;
-  }
-  .object-\[85\%_50\%\] {
-    object-position: 85% 50%;
-  }
-  .object-\[95\%_10\%\] {
-    object-position: 95% 10%;
-  }
-  .object-\[95\%_40\%\] {
-    object-position: 95% 40%;
-  }
-  .object-\[95\%_50\%\] {
-    object-position: 95% 50%;
-  }
-  .object-\[98\%_10\%\] {
-    object-position: 98% 10%;
-  }
-  .object-bottom {
-    object-position: bottom;
-  }
-  .object-bottom-left {
-    object-position: left bottom;
-  }
-  .object-bottom-right {
-    object-position: right bottom;
-  }
-  .object-center {
-    object-position: center;
-  }
-  .object-left {
-    object-position: left;
-  }
-  .object-right {
-    object-position: right;
   }
   .object-top {
     object-position: top;
@@ -699,17 +606,8 @@
     .sm\:bottom-6 {
       bottom: calc(var(--spacing) * 6);
     }
-    .sm\:h-47\.5 {
-      height: calc(var(--spacing) * 47.5);
-    }
-    .sm\:h-48 {
-      height: calc(var(--spacing) * 48);
-    }
     .sm\:w-47\.5 {
       width: calc(var(--spacing) * 47.5);
-    }
-    .sm\:w-48 {
-      width: calc(var(--spacing) * 48);
     }
     .sm\:flex-row {
       flex-direction: row;
